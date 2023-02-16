@@ -1,0 +1,21 @@
+<!-- on click of the button, 
+the text in the input field should be should be shown in the div and the alert box-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Div and Alert box</title>
+  <script>
+    function borrow() {
+      var inputText = document.getElementById("text").value;
+      document.getElementById("textcase").innerHTML = inputText;
+      alert(inputText);
+    }
+  </script>
+</head>
+<body>
+  <input type="text" id="text">
+  <button onclick="borrow()">Show Text</button>
+  <div id="textcase"></div>
+</body>
+</html>

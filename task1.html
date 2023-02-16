@@ -1,0 +1,33 @@
+<!-- four text filled boxes; on clicking, display the text content in the alert; 
+on clicking again, 
+display the previously clicked content and the current clicked content. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Filled Alert</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="msg">Myself Vijaya</div>
+        <div class="msg">Doing B.tech in</div>
+        <div class="msg">UCEN</div>
+        <div class="msg">InfoTech</div>
+    </div>
+    <script>
+        const boxes = document.querySelectorAll('.msg');
+        let oldText = '';
+
+        boxes.forEach(msg => {
+            msg.addEventListener('click', function () {
+                let text = this.textContent;
+                oldText = oldText + text + '\n';
+                alert(oldText);
+            });
+        });
+    </script>
+</body>
+</html>

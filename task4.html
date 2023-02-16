@@ -1,0 +1,44 @@
+<!-- Create your friend list(at least 10 numbers);
+while clicking in the list, if the person's first letter is a vowel,
+change the background to red; otherwise, make it green-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <ul>
+        <li onclick="msg(this)">adithi</li>
+        <li onclick="msg(this)">ezhil</li>
+        <li onclick="msg(this)">isu</li>
+        <li onclick="msg(this)">oliver</li>
+        <li onclick="msg(this)">upsana</li>
+        <li onclick="msg(this)">Raj</li>
+        <li onclick="msg(this)">raj</li>
+        <li onclick="msg(this)">Unity</li>
+        <li onclick="msg(this)">Ancy</li>
+        <li onclick="msg(this)">Esaki</li>
+        <li onclick="msg(this)">Subu</li>
+        <li onclick="msg(this)">Vibu</li>
+        <li onclick="msg(this)">karthi</li>
+        <li onclick="msg(this)">durai</li>
+      </ul>
+    <script>
+        function msg(list) {
+          var value = list.innerHTML[0];
+          if (value == 'a' || value == 'e' || value == 'i' || value == 'o' || value == 'u' || value == 'A' || value == 'E' || value == 'O' || value =='U' || value == 'I' ) {
+            list.style.backgroundColor = "red";
+          } else {
+            list.style.backgroundColor = "green";
+          }
+        }
+    </script>
+
+</body>
+</html>
+
